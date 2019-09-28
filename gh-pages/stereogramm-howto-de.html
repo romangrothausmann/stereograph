@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+	<TITLE>Janosch's Homepage - stereogramm howto (deutsch)</TITLE>
+</HEAD>
+<BODY bgcolor=#000000 link=#0050a0 alink=#0010e0 vlink=#102070>
+<font face="Courier">
+	<center>
+	<table cellpadding=11 cellspacing=0 border=0>
+	 <tr>
+	  <td bgcolor=#afdfdf align=right width=800 height=64>
+		<font size=4 color=#300000 face="Courier"><b>stereogramm howto (german)</b></font>
+	  </td>
+	  <td bgcolor=#003080 align=center valign=middle colspan=1 width=64 height=64>
+		<font size=4 face="Courier"><b><a href="index.html">x</a></b></font>
+	  </td>
+	 </tr>
+	 <tr>
+	  <td bgcolor=#ffffff colspan=2>
+		<center>
+		<table width=790 cellpadding=10 cols=3>
+		<tr>
+		<td width=250 valign=top rowspan=3>
+		<font color=#000001 face="Courier">
+			<p align=justify>Zuerst etwas Theorie. Dreidimensionales Sehen beruht auf der Perspektive. Allerdings nicht alleine. Das, was wir unter r&auml;umlichem Sehen verstehen, bezieht sich auf eine verbindliche, eindeutige Perspektive, welche nur durch zwei <b>verschiedene</b> Blickwinkel gew&auml;hrleistet werden kann. Daher hat der Mensch auch <b>zwei</b> funktionsf&auml;hige Augen, die ihm gemeinsam <b>ein</b> r&auml;umliches Bild der Umgebung vermitteln. In Wirklichkeit vermittelt nur der Kopf und das ist auch der Trick bei den Stereogrammen. Ein Stereogramm, genaugenommen ein Einbildstereogramm (SIS - Single Image Stereogram / SIRD Single Image Random Dot) vereint zwei Bilder zur Konstruktion einer eindeutigen Perspektive in einem Bild, dem Stereogramm. Alle n&ouml;tigen Rauminformationen sind in ihm enthalten - allerdings nicht wie in einem Hologramm in nahezu unendlich-facher Ausf&uuml;hrung, so da&szlig; ein wirklich real erscheinendes Objekt erscheint, welches unter einer nahezu beliebigen Perspektiven betrachtet werden kann, sondern nur eine einzige Perspektive ist im Stereogram gespeichert, nicht mehr und nicht weniger. Ein Stereogramm kann zwar unter verschiedenen Blickwinkeln betrachten werden, man bekommt jedoch immer die selbe Perspektive zu sehen - sofern man &uuml;berhaupt etwas erkennen kann: nur wenn das Stereogramm horizontal parallel zur Augenachse ausgerichtet ist, kann in dessen magische Tiefe eingedrungen werden. Ausschlie&szlig;lich so wurde die Information in ihm gespeichert und auch genau nur so kann sie wieder abgerufen werden. Das sind zwei offensichtliche Nachteile von Stereogrammen. Der gro&szlig;e und ausschlaggebende Vorteil ist allerdings, da&szlig; Stereogramme recht einfach zu erzeugen sind und vor allem noch einfacher darstellbar. Sogar auf Monitoren sind sie zu erkennen, selbst wenn es hier ein paar technisch bedingte Einschr&auml;nkungen gibt, dazu aber sp&auml;ter.</p>
+		</font>
+		</td>
+		<td width=250 valign=top colspan=2>
+		<font color=#000001 face="Courier">
+			<img src="./gfx/diagramm00.png">
+			<p align=justify></p>
+		</font>
+		</td>
+		</tr>
+		<tr>
+		<td width=250 valign=top>
+		<font color=#000001 face="Courier">
+			<p align=justify>Schauen wir uns das Grundprinzip, das sehr &auml;hnlich mit dem der Holographie ist, einmal an. Das Diagramm stellt eine schematische Ansicht von oben auf den Betrachtungsproze&szlig; dar. Gegeben sind zwei identisch aussehende Fixpunkte (<i>schwarz</i>), welche auf der selben horizontalen Geraden liegen (hier in der Ebende des virtuellen Papiers geschnitten mit dem imagin&auml;ren Stereogramm, <i><font color=#80b0b0>t&uuml;rkis gestrichelt</font></i> dargestellt) oder kurz gesagt, sich auf selber H&ouml;he befinden. Betrachten wir unwissend diese Punkte, so ergibt sich f&uuml;r unser Augenpaar der <i>schwarz</i> und <i><font color=#606060>grau</font></i> gestrichelt dargestellte Strahlengang (gekennzeichnet mit <b>&quot;<font color=#606060>realistic sight</font>&quot;</b>). Die beiden Punkte erscheinen genau da, wo sie real sind. Jetzt kommt der Trick. Nehmen wir an, das rechte (obere) Auge betrachtet den oberen Punkt - das linke (untere) Auge den unteren. Beide sind identisch - das Gehirn h&auml;lt sie f&uuml;r ein und denselben Punkt. Es ergibt sich der <i><font color=#800000>rot gestrichelte</font></i> Strahlengang - der Punkt erscheint weiter entfernt, die T&auml;uschung ist gelungen. Wie im Diagramm zu erkennen, ist die Distanz (<i><font color=#0000f0>distance, blau</font></i>) zwischen den beiden Punkten ein Ma&szlig; f&uuml;r die Entfernung, in welcher der imagin&auml;re Punkt erscheinen soll. Genau hier greifen Stereogramm-<br>generatoren ein. Indem sie geschickt die Entfernung der Punkte anpassen, t&auml;uschen sie m&ouml;glichst realistisch die in der Vorlage geforderte Tiefe vor.</p>
+		</font>
+		</td>
+		<td width=250 valign=top>
+		<font color=#000001 face="Courier">
+			<p align=justify>Einfachere Programme fassen diese Beziehung linear auf, soda&szlig; in ihrem Sinne eine doppelten Tiefe durch eine doppelte Distanz dargestellt wird. N&auml;herungsweise kann man so arbeiten, so lange die Vorlagen es erlauben. <a href="http://stereograph.sourceforge.net">stereograph</a> verwendet dagegen eine genaue Formel, um die Distanz so realistisch wie m&ouml;glich f&uuml;r eine entsprechende Tiefe der Vorlage zu bestimmen. &Uuml;berdies bedient es sich Methoden zur Verfeinerung der Distanzschritte, um flie&szlig;ende Tiefen&uuml;berg&auml;nge darstellen zu k&ouml;nnen.<br>Es bleibt nur noch eine Frage: was passiert mit dem unteren Punkt f&uuml;r das linke (obere) Auge und dem oberen f&uuml;r das rechte (untere) w&auml;hrend des Betrachtungsprozesses? Nichts logischer als das - es mu&szlig; jeweils f&uuml;r das andere Auge ein weiterer entsprechender Punkt hinzugef&uuml;gt werden. Das erkl&auml;rt schlie&szlig;lich das f&uuml;r Stereogramme typische periodisch wiederkehrende Muster. Da sich das Gehirn am sehr kleinen Bereich des Zentrums der Perspektive orientiert, also daran, wo wir hinsehen, brauchen wir uns keine Sorgen um die R&auml;nder machen, die gegen diese Regel versto&szlig;en k&ouml;nnten. Selbst bei sehr kleinen Stereogrammen spielt das kaum eine Rolle, sofern noch gen&uuml;gend Muster erkennbar ist.</p>
+		</font>
+		</td>
+		</tr>
+		<tr>
+		<td width=250 valign=top colspan=2>
+		<font color=#70a070 face="Courier">
+			<img src="./gfx/diagramm01.png">
+			<p align=left>Eine kleinere Distanz der Fixpunkte f&uuml;hrt zu einen n&auml;her erscheinenden Punkt (vgl. oberes Diagramm)</p>
+		</font>
+		</td>
+		</tr>
+		</table>
+		<table width=790 cellpadding=10 cols=2>
+		<tr>
+		<td width=300>
+		<font color=#70a070 face="Courier">
+			<img src="./gfx/diagramm02.png" alt="demo diagram">
+			<p align=left>rendered without aa</p>
+		</font>
+		</td>
+		<td width=300 valign=top>
+		<font color=#000001 face="Courier">
+			<p align=justify>Wie hier zu sehen ist, nimmt die Tiefe mit der Breite der Textur ab. Es sind jedoch Stufen zu erkennen und wegen der wenigen Details in der Textur sind diese sehr deutlich sichtbar, abgesehen von ihren Grenzen.</p>
+		</font>
+		</td>
+		</tr>
+		<tr>
+		<td width=300>
+		<font color=#70a070 face="Courier">
+			<img src="./gfx/diagramm03.png" alt="demo diagram">
+			<p align=left>rendered with aa</p>
+		</font>
+		</td>
+		<td width=300 valign=top>
+		<font color=#000001 face="Courier">
+			<p align=justify>Im selben Bild mit Anti-Aliasing ergibt sich ein viel angenehmerer Blick, selbst ohne gro&szlig;e Details in der Textur. Stufen sind nicht mehr erkennbar.</p>
+		</font>
+		</td>
+		</tr>
+		</table>
+		<table width=790>
+		<tr>
+		<td align=right>
+		<font color=#000000 face="Courier">
+			<a href="./stereogramm-howto-de-01.html">...is continued</a><br>&nbsp;
+		</font>
+		</td>
+		</tr>
+		<tr>
+		<td align=right>
+		<font color=#000000 face="Courier">
+			&copy; 2000 by <a href="mailto:fabian.3d@januszewski.de">Fabian Januszewski</a><br>&nbsp;<br>&nbsp;
+		</font>
+		</td>
+		</tr>
+		</table>
+		</center>
+	  </td>
+	 </tr>
+	</table>
+	</center>
+</font>
+</BODY>
+</HTML>
